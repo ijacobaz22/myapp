@@ -1,8 +1,3 @@
-
-Spandan Goel
-6:38 AM (2 minutes ago)
-to me, Samarth, Armanya
-
 // Hello.
 //
 // This is JSHint, a tool that helps to detect errors and potential
