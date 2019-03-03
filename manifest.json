@@ -1,0 +1,17 @@
+{
+  "name": "Cyber Security Extension",
+  "description": "Through this extension, when you type in a password to a any website on google.com, you may type in a very simple password. But what happens is the software/company you typed your password into gets an encrypted password sent to them, so they cannot see your password. This is a very useful extension so your information can be secured and safe all the time. So far our extension has a 100% suceed rate with encrypted your passwords.",
+  "version": "0.0.0.3",
+  "manifest_version": 2,
+  "icons": {
+    "128": "shsHacksLogoUPDATED.jpg"
+  },
+  "app": {
+    "urls": [
+      "https://honeydewrepentantmuse.spandan14.repl.co/"
+    ],
+    "launch": {
+      "web_url": "https://honeydewrepentantmuse.spandan14.repl.co/"
+    }
+  }
+}
