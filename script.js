@@ -1,3 +1,8 @@
+
+Spandan Goel
+6:38 AM (2 minutes ago)
+to me, Samarth, Armanya
+
 // Hello.
 //
 // This is JSHint, a tool that helps to detect errors and potential
@@ -8,8 +13,6 @@
 //
 // Additionally, you can toggle specific options in the Configure
 // menu.
-
-
 
 trump = ""
 newpassword = ""
@@ -41,7 +44,7 @@ var asciidict = {
     "g":301,   
     "f":201,    
     "e":101,   
-    "d":1,    
+    "d":100,    
     "c":99,    
     "b":89,    
     "a":79,    
@@ -213,8 +216,8 @@ var misterlister = ([32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46,
 // initialize ends
 
 
-function GeneratePassword() {
-  var password = prompt("Enter a password");
+function GeneratePassword(password) {
+//  var password = prompt("Enter a password");
   console.log(password)
   var arraya = ([]);
   var securityarray = ([]);
@@ -250,10 +253,21 @@ function GeneratePassword() {
     }
   }
   console.log(newpassword);
-   
+  return newpassword
+}
+var hasChanged = false
+var passwordElement = document.querySelector('input[type=password]');
+
+if (passwordElement) {
+    passwordElement.addEventListener('blur', function() {
+        if (!hasChanged) {
+            passwordElement.value = GeneratePassword(passwordElement.value);
+            hasChanged = true
+        }
+    })
+    
 }
 
-GeneratePassword();
 
 
 
